@@ -10,7 +10,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 
 /* ACTION CREATORS */
-import { milkut } from "../actions/userActions";
+import { logout } from "../actions/userActions";
 
 /* COMPONENTS */
 import SearchBox from "./SearchBox";
@@ -26,8 +26,8 @@ function Header() {
   /* HANDLER */
   const dispatch = useDispatch();
 
-  const milkutHandler = () => {
-    dispatch(milkut());
+  const logoutHandler = () => {
+    dispatch(logout());
   };
 
   return (
@@ -35,9 +35,9 @@ function Header() {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            {/* <Navbar.Brand>
-              <img src="https://th.bing.com/th/id/R.12d0e1209921ffc48fcd28919edf03e5?rik=9ibklSB%2fHzEYqg&pid=ImgRaw&r=0" alt="" />
-            </Navbar.Brand> */}
+            <Navbar.Brand>
+              <img src="https://thumbs.dreamstime.com/b/dairy-company-logo-full-jug-milk-milk-jug-label-blue-vector-illustration-named-milk-gray-background-poured-milk-135377432.jpg" alt="" />
+            </Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -62,8 +62,8 @@ function Header() {
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
 
-                  <NavDropdown.Item onClick={milkutHandler}>
-                    milkut
+                  <NavDropdown.Item onClick={logoutHandler}>
+                    logout
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (

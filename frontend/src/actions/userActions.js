@@ -6,7 +6,7 @@ import {
   USER_LOGIN_REQUEST,
   USER_LOGIN_SUCCESS,
   USER_LOGIN_FAIL,
-  USER_milkUT,
+  USER_logoUT,
   USER_REGISTER_REQUEST,
   USER_REGISTER_SUCCESS,
   USER_REGISTER_FAIL,
@@ -70,14 +70,14 @@ export const login = (email, password) => async (dispatch) => {
   }
 };
 
-/* ACTION CREATOR USED IN USER milkUT IN LoginScreen COMPONENT & HEADER */
-export const milkut = () => (dispatch) => {
+/* ACTION CREATOR USED IN USER logoUT IN LoginScreen COMPONENT & HEADER */
+export const logout = () => (dispatch) => {
   /* REMOVE USER INFO FORM LOCAL STORAGE */
   localStorage.removeItem("userInfo");
 
   /* DISPATCH TO REMOVE USER INFO FORM STORE */
   dispatch({
-    type: USER_milkUT,
+    type: USER_logoUT,
   });
   dispatch({
     type: USER_DETAILS_RESET,

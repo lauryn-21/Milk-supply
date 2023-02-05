@@ -5,8 +5,8 @@ export const USER_LOGIN_REQUEST = "USER_LOGIN_REQUEST";
 export const USER_LOGIN_SUCCESS = "USER_LOGIN_SUCCESS";
 export const USER_LOGIN_FAIL = "USER_LOGIN_FAIL";
 
-// milkUT
-export const USER_milkUT = "USER_milkUT";
+// logoUT
+export const USER_logoUT = "USER_LOGOUT";
 
 // REGISTER
 export const USER_REGISTER_REQUEST = "USER_REGISTER_REQUEST";

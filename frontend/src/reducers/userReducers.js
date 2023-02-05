@@ -3,7 +3,7 @@ import {
   USER_LOGIN_REQUEST,
   USER_LOGIN_SUCCESS,
   USER_LOGIN_FAIL,
-  USER_milkUT,
+  USER_LOGOUT,
   USER_REGISTER_REQUEST,
   USER_REGISTER_SUCCESS,
   USER_REGISTER_FAIL,
@@ -48,7 +48,7 @@ export const userLoginReducer = (state = {}, action) => {
         error: action.payload,
       };
 
-    case USER_milkUT:
+    case USER_milUT:
       return {}; /* CLEARS STATE */
 
     default:
@@ -76,7 +76,7 @@ export const userRegisterReducer = (state = {}, action) => {
         error: action.payload,
       };
 
-    case USER_milkUT:
+    case USER_LOGOUT:
       return {}; /* CLEARS STATE */
 
     default:
